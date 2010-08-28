@@ -9,7 +9,7 @@ dynamically generated CSV files from your application.
 CSV Builder requires Rails 3.0.0.rc2 or higher.
 
 It no longer depends upon the FasterCSV gem http://fastercsv.rubyforge.org .
-Instead it uses the csv included with Rails 3.0
+Instead it uses the CSV included with Rails 3.0
 	
 Encoding conversions are done with Iconv, so make sure you have it on your
 development/production machine.
@@ -55,4 +55,4 @@ including a snippet like the following in your mailer method
 
 
 Copyright (c) 2008 Econsultancy.com and 2009 Vidmantas Kabošis, released under
-the MIT license.
+the MIT license. Ported to Rails 3 by Loh Siu Yin.
