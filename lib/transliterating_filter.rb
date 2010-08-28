@@ -13,7 +13,7 @@ class TransliteratingFilter
     @iconv = Iconv.new("#{output_encoding}//TRANSLIT//IGNORE", input_encoding) if input_encoding != output_encoding
   end
 
-  # Transliterate before passing to FasterCSV so that the right characters (e.g. quotes) get escaped
+  # Transliterate before passing to CSV so that the right characters (e.g. quotes) get escaped
   def <<(row)
     @faster_csv << if @iconv then row.map { |value| @iconv.iconv(value.to_s) } else row end
   end

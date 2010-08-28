@@ -1,4 +1,4 @@
-require 'fastercsv'
+require 'csv'
 require 'iconv'
 
 module ActionView # :nodoc:
@@ -40,7 +40,7 @@ module ActionView # :nodoc:
             controller.response.headers['Content-Disposition'] = "attachment; filename=\#{@filename}"
           end
 
-          FasterCSV.generate do |faster_csv|
+          CSV.generate do |faster_csv|
             csv = TransliteratingFilter.new(faster_csv)
             #{template.source}
           end
