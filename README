@@ -1,3 +1,7 @@
+= NOTE
+Please use git://github.com/vidmantas/csv_builder.git as that version is a
+much better version compatible with both Rails 2.x and Rails 3 .
+
 = CSV Builder
 
 The CSV Builder Rails plugin provides a simple templating system for serving
@@ -55,4 +59,4 @@ including a snippet like the following in your mailer method
 
 
 Copyright (c) 2008 Econsultancy.com and 2009 Vidmantas Kabošis, released under
-the MIT license. Ported to Rails 3 by Loh Siu Yin.
+the MIT license.
